@@ -1,6 +1,8 @@
-# https://leetcode-cn.com/problems/range-sum-query-immutable/
-# 求一个数组中从索引i到索引j的数字之和，且求和方法会调用很多次，需要该方法的时间复杂度为O(1)
-# 考虑使用动态规划中的dp数组储存数组的前i项和，则求和结果为dp[j + 1] - dp[i]
+"""
+https://leetcode-cn.com/problems/range-sum-query-immutable/
+求一个数组中从索引i到索引j的数字之和，且求和方法会调用很多次，需要该方法的时间复杂度为O(1)
+考虑使用动态规划中的dp数组储存数组的前i项和，则求和结果为dp[j + 1] - dp[i]
+"""
 from typing import List
 
 
