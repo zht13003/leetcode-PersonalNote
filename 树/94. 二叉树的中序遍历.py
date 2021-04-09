@@ -18,7 +18,7 @@ def help(root: TreeNode, res: List[int]):
     if root is None:
         return
     help(root.left, res)
-    res.add(root.val)
+    res.append(root.val)
     help(root.right, res)
 
 
