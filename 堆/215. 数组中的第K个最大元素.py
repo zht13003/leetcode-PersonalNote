@@ -24,3 +24,4 @@ def findKthLargest(nums: List[int], k: int) -> List[int]:
 
 val = [8, 7, 5, 1, 2, 9, 6, 3, 4]
 print(findKthLargest(val, 3))
+a = {}
