@@ -8,6 +8,7 @@ dp[j]代表以s[j]为结尾的最长不重复子串的长度
 考虑到dp[j]只与dp[j - 1]相关，只用一个变量tmp储存dp，并取res和tmp中较大者为结果
 用一个字典dic记录各字符最后一次出现的索引
 """
+
 def lengthOfLongestSubstring(s: str) -> int:
     dic = {}
     res = tmp = 0
