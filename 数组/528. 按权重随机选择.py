@@ -4,8 +4,8 @@ https://leetcode-cn.com/problems/random-pick-with-weight/
 如w=[3,1,2,4]
 |---3---|-1-|--2--|----4----|
 0       3   4     6         10
-设w的前缀和数组为pre[i]，则上图数组的左端点为pre[i]-w[i]，右端点为pre[i]
-随机生成一个数x，求x落在哪个区间，即满足pre[i]-w[i]<=x<=pre[i]
+设w的前缀和数组为pre[i]，则上图第i段的左端点为pre[i]-w[i]，右端点为pre[i]
+随机生成一个数x∈[0,sum(w)]，求x落在哪个区间，即满足pre[i]-w[i]<=x<=pre[i]
 由于pre[i]递增，只需要找到第一个满足x<=pre[i]即可，可用二分查找
 """
 import random
