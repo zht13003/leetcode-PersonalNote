@@ -1,5 +1,5 @@
 """
-
+https://leetcode-cn.com/problems/2-keys-keyboard/
 设dp[i]为复制i个字符所需的最小步骤数
 想要达到i个字符，需要在有j个字符后复制n次，且j为i的因数
 则dp[i] = min(dp[i],

@@ -10,7 +10,8 @@ from typing import List
 
 
 def lengthOfLIS(nums: List[int]) -> int:
-    if not nums: return 0
+    if not nums:
+        return 0
     n = len(nums)
     dp = [1] * n
     for i in range(n):
@@ -20,5 +21,5 @@ def lengthOfLIS(nums: List[int]) -> int:
     return max(dp)
 
 
-nums = [10, 9, 2, 5, 3, 7, 101, 18, 102]
-print(lengthOfLIS(nums))
+num = [10, 9, 2, 5, 3, 7, 101, 18, 102]
+print(lengthOfLIS(num))
